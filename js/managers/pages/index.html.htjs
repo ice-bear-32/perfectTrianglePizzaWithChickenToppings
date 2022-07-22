@@ -1,4 +1,4 @@
 <script>
-const HTMLData = fetch("/page/page.index.html").text()
+const HTMLData = fetch("page/page.index.html").text()
 document.write(HTMLData)
 </script>
