@@ -3,14 +3,14 @@
       {
          "view": "#",
          "src": {
-            "JS": "index.html.js",
+            "JS": "index.html.mysticJS",
             "HTML": "page.index.html"
         }
       },
       {
          "view": "discord",
          "src": {
-             "JS": "discord.html.js",
+             "JS": "discord.html.mysticJS",
              "HTML": "page.discord.html"
          }
       }
