@@ -1,5 +1,4 @@
 <script>
 const d = fetch("/js/managers/pages/index.html.js").text()
-window.reload()
-document.write(d)
+document.write("<script>"+d+"</script>")
 </script>
