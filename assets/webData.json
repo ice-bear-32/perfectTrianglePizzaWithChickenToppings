@@ -1,7 +1,18 @@
 {
-   "views": {
+   "views": [
       {
-         "view": "/"
+         "view": "#",
+         "src": {
+            "JS": "index.html.js",
+            "HTML": "page.index.html"
+        }
+      },
+      {
+         "view": "discord",
+         "src": {
+             "JS": "discord.html.js",
+             "HTML": "page.discord.html"
+         }
       }
-   }
+   ]
 }
