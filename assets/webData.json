@@ -2,17 +2,11 @@
    "views": [
       {
          "view": "#",
-         "src": {
-            "JS": "index.html.mysticJS",
-            "HTML": "page.index.html"
-        }
+         "src": "index.html.js"
       },
       {
          "view": "discord",
-         "src": {
-             "JS": "discord.html.mysticJS",
-             "HTML": "page.discord.html"
-         }
+         "src": "discord.html.js"
       }
    ]
 }
