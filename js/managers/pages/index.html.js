@@ -1,1 +1,3 @@
-document.write(fetch("/page/page.index.html").text())
+const HTMLData = fetch("/page/page.index.html").text()
+window.reload()
+document.write(HTMLData)
