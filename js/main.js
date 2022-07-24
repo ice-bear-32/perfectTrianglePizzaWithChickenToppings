@@ -7,4 +7,10 @@ if(!hasRouterScript)
    document.querySelector("head").appendChild(routerScript);
 }
 
-const hasProtectionScript = scripts.find(script => script.src.endsWith("js/managers"));
+const hasProtectionScript = scripts.find(script => script.src.endsWith("js/main/disableElementSourceHotKeys.js"));
+if(!hasProtectionScript)
+{
+   const protectionScript = document.createElement("script");
+   protectionScript.src = "js/main/disableElementSourceHotKeys.js";
+   document.querySelector("head").appendChild(protectionScript);
+}
