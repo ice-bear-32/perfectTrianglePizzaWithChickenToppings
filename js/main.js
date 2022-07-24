@@ -1,5 +1,8 @@
 const scripts = document.querySelectorAll("script");
-const hasRouterScript = scripts.find(script => script.src.endsWith("js/managers/pages/pageRouter.js"));
+let hasRouterScript = false;
+scripts.forEach(script => {
+   if(script.src.endsWith("pageRouter.js")) hasRouterScript = true;
+})
 if(!hasRouterScript)
 {
    const routerScript = document.createElement("script");
@@ -7,7 +10,10 @@ if(!hasRouterScript)
    document.querySelector("head").appendChild(routerScript);
 }
 
-const hasProtectionScript = scripts.find(script => script.src.endsWith("js/main/disableElementSourceHotKeys.js"));
+let hasProtectionScript = false;
+scripts.forEach(script => {
+   if(script.src.endsWith("disableElementSourceHotKeys.js")) hasProtectionScript = true;
+})
 if(!hasProtectionScript)
 {
    const protectionScript = document.createElement("script");
