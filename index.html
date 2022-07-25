@@ -1,1 +1,9 @@
 <script src="js/main.js"></script>
+<script>
+const common_CSS = document.createElement("style");
+common_CSS.innerHTML = `.window-page-html {
+   height: ${window.innerHeight}px;
+   width: ${window.innerWidth}px;
+}`
+document.querySelector("head").appendChild(common_CSS)
+</script>
