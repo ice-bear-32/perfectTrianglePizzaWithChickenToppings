@@ -1,4 +1,4 @@
-fetch("page/page.index.html").then(res => {
+fetch("/page/page.index.html").then(res => {
    return res.text();
 }).then(body => {
    const html = document.createElement("iframe");
