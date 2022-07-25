@@ -1,1 +1,3 @@
-document.write("test");
+function indexRoute() {
+   return document.write("test")
+}
