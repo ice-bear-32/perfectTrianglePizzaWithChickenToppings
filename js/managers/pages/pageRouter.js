@@ -6,5 +6,9 @@ const files = [{
 const route = location.href.includes("#") ? location.href.split("#")[1] : "";
 const routeSrc = files.find(file => file.route == "#"+route).src;
 const routeFileScript = document.createElement("script");
-routeFileScript.src = routeSrc;
-document.querySelector("body").appendChild(routeFileScript);
+fetch(routeSrc).then(res => {
+   return res.text()
+}).then(body => {
+   routeFileScript.innerHTML = body;
+   document.querySelector("body").appendChild(routeFileScript);
+})
